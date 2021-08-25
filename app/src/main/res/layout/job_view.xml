@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:padding="20dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/colorAccent">
+
+
+    <TextView
+        android:id="@+id/date_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+
+        android:textAlignment="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/name001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:text="Company Name"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/companyname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name001"
+            android:layout_alignBottom="@+id/name001"
+            android:layout_toEndOf="@id/name001"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/companyname1"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:text="Designation"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/designation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name3"
+            android:layout_alignBottom="@+id/name3"
+            android:layout_toEndOf="@id/name3"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/designation1"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:text="Job Description"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/job_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name4"
+            android:layout_marginTop="4dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/name5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_description"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:text="Employee Type"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/employee_Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name5"
+            android:layout_alignBottom="@+id/name5"
+            android:layout_toEndOf="@id/name5"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/name6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employee_Type"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:text="Experience"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name6"
+            android:layout_alignBottom="@+id/name6"
+            android:layout_toEndOf="@id/name6"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/name7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/experience"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:text="Qualification"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qualification1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name7"
+            android:layout_alignBottom="@+id/name7"
+            android:layout_toEndOf="@id/name7"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

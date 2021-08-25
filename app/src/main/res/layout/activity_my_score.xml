@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".my_score"
+    android:background="@drawable/admin_news_bg1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/roundforoc"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/newback"
+            android:onClick="ClickBack"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="My Score"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+
+            android:orientation="vertical"
+            tools:context=".my_score"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text="\t Please provide your valuable rating- "/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/namealu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name of Alumni:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/input_namealu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Event Type:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:entries="@array/Events"
+                        android:popupBackground="#D9020202" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/schoolalu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="School:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:entries="@array/Schools"
+                        android:popupBackground="#D9020202" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/srnalu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="SRN:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/input_srn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:digits="0123456789abdefghijklmnopqrstuvwxyz"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/topicalu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Topic:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/input_topic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Feedback about the session?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_alu1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_alu1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/good_alu1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/average_alu1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/poor_alu1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Feedback about the Content delivery?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_alu2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_alu2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/good_alu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/average_alu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/poor_alu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Was the session useful?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_alu3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_alu3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/good_alu3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/average_alu3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/poor_alu3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Was the session related to the Topic?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_alu4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_alu4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/good_alu4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/average_alu4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/poor_alu4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Was the session Time Managing?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_alu5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_alu5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/good_alu5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/average_alu5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/poor_alu5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/suggestions_alu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Any Suggestions / Queries?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/suggestions2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textImeMultiLine"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send_FeedBack_alu"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangle_14"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp"
+                android:text="Submit"
+                android:textAllCaps="true"
+
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

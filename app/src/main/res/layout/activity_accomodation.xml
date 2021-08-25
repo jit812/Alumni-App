@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_news_bg1"
+    tools:context=".Accomodation"
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/roundforoc"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/newback"
+            android:onClick="backbb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="202dp"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="Support"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" >
+
+        <EditText
+            android:id="@+id/usernameLogin"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundallsides"
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/something"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="16dp"
+            android:digits="abcdefghijklmnopqrstuvwxyz 0123456789"
+            android:background="@drawable/roundallsides"
+            android:ems="10"
+            android:hint="SRN"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameLogin" />
+
+        <EditText
+            android:id="@+id/another"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/roundallsides"
+            android:ems="10"
+            android:hint="Purpose of Visit"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/something" />
+
+
+        <EditText
+            android:id="@+id/anotherone"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/roundallsides"
+            android:ems="10"
+            android:maxLength="12"
+            android:digits="0123456789"
+            android:hint="Phone Number"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/another" />
+
+        <Spinner
+            android:id="@+id/anotheroneitseems"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:entries="@array/accomodation"
+            android:spinnerMode="dialog"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/roundallsides"
+            android:ems="10"
+            android:hint="Date"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anotherone" />
+
+        <EditText
+            android:id="@+id/anotheroneitseemsso"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/roundallsides"
+            android:ems="10"
+            android:hint="No of Days"
+            android:digits="0123456789"
+            android:maxLength="2"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anotheroneitseems" />
+
+        <Button
+
+            android:id="@+id/submit_btn_acc"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anotheroneitseemsso" />
+
+        <TextView
+            android:id="@+id/textbelow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="#56020202"
+            android:text="Dear Alumni,\nThe page will be redirected to email kindly include all the details in mail"
+            android:textColor="#fff"
+            android:textSize="15dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submit_btn_acc"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

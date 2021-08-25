@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/admin_news_bg1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/roundforoc"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/newback"
+            android:onClick="backbb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="Feedback"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            tools:context=".RadioActivity"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:text=" Dear Alumni,\n Please give your valuable feedback- "/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/srn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SRN:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/input_srn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:digits="abcdefghijklmnopqrstuvwxyz0123456789"
+                        android:maxLength="8"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/branch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Branch:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:entries="@array/Schools"
+                        android:popupBackground="#D9020202" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Year of completion of course:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/input_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:paddingLeft="5dp"
+                        android:maxLength="4"
+                        android:digits="0123456789"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/occupation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Present Occupation / Designation:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/input_occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Feedback about REVA University?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/good_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/average_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/poor_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Feedback about REVA Alumni App?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/good_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/average_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/poor_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Feedback about the curriculum?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/good_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/average_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/poor_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Feedback about REVA Website?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/good_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/average_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/poor_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Infrastructure and Lab Facilities:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/good_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/average_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/poor_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Faculty:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/good_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/average_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/poor_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Library:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/good_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/average_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/poor_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Office Staff:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/good_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/average_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/poor_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Hostel Facilities:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/excellent_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Excellent"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/very_good_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/good_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Good"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/average_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Average"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/poor_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Poor"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#56020202"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/suggestions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Any Suggestions / Queries?"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/suggestions1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textImeMultiLine"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send_FeedBack"
+                android:layout_width="298dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangle_14"
+                android:paddingBottom="5dp"
+                android:text="@string/submit_feedback"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

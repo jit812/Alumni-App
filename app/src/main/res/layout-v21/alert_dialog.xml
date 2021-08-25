@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_news_bg1">
+
+
+    <TextView
+        android:id="@+id/alertDialogTitle"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="@string/email"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailAlert"
+        android:layout_width="383dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="44dp"
+        android:background="#56020202"
+        android:ems="10"
+        android:hint="@string/enter_email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alertDialogTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

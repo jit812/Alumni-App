@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:padding="20dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/colorAccent">
+    <TextView
+        android:id="@+id/date_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/srn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SRN"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/srn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/srn"
+            android:layout_alignBottom="@+id/srn"
+            android:layout_toEndOf="@id/srn"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/srn"
+            android:layout_marginTop="4dp"
+            android:text="Branch"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/input_branch"
+            android:layout_width="317dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/branch"
+            android:layout_marginBottom="-19dp"
+            android:layout_toEndOf="@id/branch"
+            android:inputType="textMultiLine"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_branch"
+            android:layout_marginTop="19dp"
+            android:text="Year of Competition of course"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/input_year1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/year"
+            android:layout_alignBottom="@+id/year"
+            android:layout_toEndOf="@id/year"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/occupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_year1"
+            android:layout_marginTop="4dp"
+            android:text="Occupation"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/input_occupation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/occupation"
+            android:layout_alignBottom="@+id/occupation"
+            android:layout_toEndOf="@id/occupation"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_occupation1"
+            android:layout_marginTop="4dp"
+            android:text="Feedback about REVA University"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_reva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f1"
+            android:layout_alignBottom="@+id/f1"
+            android:layout_toEndOf="@id/f1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_reva"
+            android:layout_marginTop="4dp"
+            android:text="Feedback about REVA Alumni app"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f2"
+            android:layout_alignBottom="@+id/f2"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/f2"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/f3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_app"
+            android:layout_marginTop="4dp"
+            android:text="Feedback about Curriculum"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/about_curriculum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f3"
+            android:layout_alignBottom="@+id/f3"
+            android:layout_toEndOf="@id/f3"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/f4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f3"
+            android:layout_marginTop="4dp"
+            android:text="Feedback about REVA website"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f4"
+            android:layout_alignBottom="@+id/f4"
+            android:layout_toEndOf="@id/f4"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/f7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_website"
+            android:layout_marginTop="4dp"
+            android:text="Infrastructure and lab facilities"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_infra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f7"
+            android:layout_alignBottom="@+id/f7"
+            android:layout_toEndOf="@id/f7"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/f8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_infra"
+            android:layout_marginTop="4dp"
+            android:text="Faculty"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_faculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f8"
+            android:layout_alignBottom="@+id/f8"
+            android:layout_toEndOf="@id/f8"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/f9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_faculty"
+            android:layout_marginTop="4dp"
+            android:text="Library"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_lib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f8"
+            android:layout_alignBottom="@+id/f9"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/f9"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/f10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_lib"
+            android:layout_marginTop="4dp"
+            android:text="Office Staffs"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/staffs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f10"
+            android:layout_alignBottom="@+id/f10"
+            android:layout_toEndOf="@id/f10"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/f11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/staffs"
+            android:layout_marginTop="4dp"
+            android:text="Hostel Facilities"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_hostel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f11"
+            android:layout_alignBottom="@+id/f11"
+            android:layout_toEndOf="@id/f11"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/f12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_hostel"
+            android:layout_marginTop="4dp"
+            android:text="Any Suggessions"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sugg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f12"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

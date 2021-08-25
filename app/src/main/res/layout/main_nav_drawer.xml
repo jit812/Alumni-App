@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ff9000">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:gravity="center_vertical"
+            android:text="REVA \nAlumni"
+            android:textColor="#fff"
+            android:textSize="28dp"
+            android:layout_marginStart="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/faded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:onClick="ClickAboutAlumni">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_baseline_info_24"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="About Alumni"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewab"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/faded"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:onClick="ClickSupport">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_baseline_contact_support_24"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Support"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewasfs"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/faded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:onClick="ClickAdmissionReference">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Admission Reference"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/faded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:onClick="ClickFeedBack">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="8dp"
+
+            app:srcCompat="@drawable/ic_support"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feedback"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/faded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:onClick="ClickContactDetails">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_baseline_contacts_24"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contact Details"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="0.1dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/faded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:onClick="ClickJob">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_baseline_work_24"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Job"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="0.1dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/faded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:onClick="ClickJobr">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_baseline_work_24"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Job View"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp" />
+
+    </LinearLayout>
+    <View
+        android:layout_height="0.1dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/faded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:onClick="ClickBr">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_baseline_local_grocery_store_24"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Brand Store"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/faded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:onClick="ClickAboutUs">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/abt_jsp"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="About Developers"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="16dp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/faded"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:textStyle="bold"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="8dp"
+    android:textSize="17dp"
+    android:text="More Options"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll12"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        >
+
+
+
+
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:onClick="ClickShr"
+
+                android:layout_height="40dp"
+                android:src="@drawable/ic_share"
+                />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Share"
+    android:textStyle="bold"
+    android:onClick="ClickShr"
+
+    android:textSize="17dp"
+    android:layout_gravity="center_vertical"/>
+
+
+
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="ClickLog"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_logout"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textStyle="bold"
+            android:onClick="ClickLog"
+
+            android:textSize="17dp"
+            android:layout_gravity="center_vertical"/>
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/faded"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:textSize="17dp"
+        android:text="Follow us on"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll122"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        >
+
+
+
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/fb1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:layout_height="50dp"
+            android:src="@drawable/fb1"
+            />
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/insta1"
+            android:layout_height="50dp"
+            android:src="@drawable/insta1"
+            />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/linkedin1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@drawable/linkedin"
+            />
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/faded"/>
+
+    </LinearLayout>
+

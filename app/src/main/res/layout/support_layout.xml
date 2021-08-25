@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:padding="20dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/colorAccent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+
+
+
+        <TextView
+            android:id="@+id/srn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="SRN"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/srn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/srn1"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@id/srn1"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/trans_id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/srn2"
+            android:layout_margin="4dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="Transaction Id"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/trans_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/srn1"
+            android:layout_alignBottom="@+id/trans_id1"
+            android:layout_toEndOf="@id/trans_id1"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/year_of_graduation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trans_id"
+            android:layout_margin="4dp"
+            android:text="Year of graduation"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/year_of_graduation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/year_of_graduation1"
+            android:layout_alignBottom="@+id/year_of_graduation1"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/year_of_graduation1"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/specification_branch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/year_of_graduation2"
+            android:layout_margin="4dp"
+            android:text="Specification/Branch"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/specification_branch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/specification_branch1"
+            android:layout_margin="4dp"
+            android:inputType="text"
+            android:textAlignment="textStart"
+
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/required_documents1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/specification_branch2"
+            android:layout_margin="4dp"
+            android:text="Required documents(TC,Marks Card etc)"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/required_documents2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/required_documents1"
+            android:layout_margin="4dp"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

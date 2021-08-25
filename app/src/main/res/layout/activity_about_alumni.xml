@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/about_bg1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/roundforoc"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/newback"
+            android:onClick="backbb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="202dp"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="About"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/about_card1"
+                android:backgroundTint="#7A696969"
+                app:cardCornerRadius="15dp"
+                android:outlineProvider="none"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="VISION"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#C5C4C4"/>
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/vision_about"
+                        android:textColor="#fff"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/about_card1"
+                android:backgroundTint="#7A696969"
+                app:cardCornerRadius="15dp"
+                android:outlineProvider="none"
+
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="MISSION"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:background="#C5C4C4"/>
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/to_impart_quality_education_to_meet_the_needs_of_profession_and_society_and_achieve_excellence_in_teaching_learning_and_research_in_the_area_of_computer_applications"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="To attract and develop talented and committed human resource, and provide an environment conducive to innovation, creativity, team-spirit and entrepreneurial leadership in Computing field;"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="To facilitate effective interactions among faculty and students of the School of Computer Applications, and foster networking with alumni, industries, institutions and other stake-holders;"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/t5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="To impart quality education to meet the needs of profession and society, and achieve excellence in teaching-learning and research in the area of Computer Applications;"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/about_card1"
+                android:backgroundTint="#7A696969"
+                app:cardCornerRadius="15dp"
+                android:outlineProvider="none"
+
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="OBJECTIVES"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:background="#C5C4C4"/>
+
+                    <TextView
+                        android:id="@+id/t6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/to_impart_programs_at_graduate_post_graduate_and_doctoral_levels_in_the_field_of_computer_applications"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/t7"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/to_adopt_innovative_methods_of_teaching_and_promote_student_centric_learning_process"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/t8"
+                        android:padding="10dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/to_create_infrastructure_of_international_standard_and_facilitate_and_create_conducive_environment_for_teaching_learning_and_research"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/t11"
+                        android:letterSpacing=".05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+
+                        android:text="@string/to_promote_faculty_development_and_encourage_faculty_members_and_students_to_organize_and_participate_in_national_and_international_level_conferences_seminars_symposia_and_such_others"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/t10"
+                        android:letterSpacing=".05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+
+                        android:text="@string/to_encourage_teachers_and_students_to_take_up_interdisciplinary_studies_and_research"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/t9"
+                        android:letterSpacing=".05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        android:gravity="center"
+
+                        android:text="@string/to_promote_students_participation_in_co_curricular_and_extension_activities_and_develop_their_personality_traits_and_team_spirit"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/about_card1"
+                android:backgroundTint="#7A696969"
+                app:cardCornerRadius="15dp"
+                android:outlineProvider="none"
+
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Contact Details"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:background="#C5C4C4" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="1. Nataraj Urs H D                               President "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="2.  Sreenidhi U                             Vice President "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="3. Manjunath M                                    Secretary "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text="4. Sagar B S                        Joint Secretary "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text="5. Bharathi                                   Treasurer "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text="6. R Madhu                      Exe Com Member "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text="7. Manas                         Exe Com Member "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text="8. Vinod Kumar G           Exe Com Member "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text=" 9. Himanshu Sharma       Exe Com Member"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text="10. Naveen C                     Exe Com Member "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text="11. Nagendra S M             Exe Com Member "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text="12. Deepa B G                  Exe Com Member  "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text="13. Raghavendra Reddy  Exe Com Member  "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text=" 14. Ramesh Kumar S C     Exe Com Member "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text=" 15. Subhash B K               Exe Com Member "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:padding="10dp"
+                        android:text=" 16. Ramya S                      Exe Com Member "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

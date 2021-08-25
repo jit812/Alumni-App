@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:padding="20dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/colorAccent">
+    <TextView
+        android:id="@+id/date_myscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+
+        android:textAlignment="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/srn_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SRN"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/srn_alu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/srn_alu"
+            android:layout_alignBottom="@+id/srn_alu"
+            android:layout_toEndOf="@id/srn_alu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+
+        <TextView
+            android:id="@+id/name_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/srn_alu1"
+            android:layout_marginTop="4dp"
+            android:text="Name of alumni"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/input_name_alu"
+            android:layout_width="317dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/name_alu"
+            android:layout_marginBottom="-19dp"
+            android:layout_toEndOf="@id/name_alu"
+            android:inputType="textMultiLine"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/topic_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_name_alu"
+            android:layout_marginTop="19dp"
+            android:text="Topic"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/input_topic_alu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/topic_alu"
+            android:layout_alignBottom="@+id/topic_alu"
+            android:layout_toEndOf="@id/topic_alu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/event_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_topic_alu"
+            android:layout_marginTop="4dp"
+            android:text="Event"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/input_event_alu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/event_alu"
+            android:layout_alignBottom="@+id/event_alu"
+            android:layout_toEndOf="@id/event_alu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/schools_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_event_alu"
+            android:layout_marginTop="4dp"
+            android:text="School"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_school_alu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/schools_alu"
+            android:layout_alignBottom="@+id/schools_alu"
+            android:layout_toEndOf="@id/schools_alu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/session_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_school_alu"
+            android:layout_marginTop="4dp"
+            android:text="Feedback about Session?"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_session_alu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/session_alu"
+            android:layout_alignBottom="@+id/session_alu"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/session_alu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/content_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_session_alu"
+            android:layout_marginTop="4dp"
+            android:text="Feedback about Content Delivery?"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/about_content_alu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/content_alu"
+            android:layout_alignBottom="@+id/content_alu"
+            android:layout_toEndOf="@id/content_alu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/useful_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_content_alu"
+            android:layout_marginTop="4dp"
+            android:text="was the session useful?"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_useful_alu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/useful_alu"
+            android:layout_alignBottom="@+id/useful_alu"
+            android:layout_toEndOf="@id/useful_alu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/topic_alu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_useful_alu"
+            android:layout_marginTop="4dp"
+            android:text="Was the session related to the Topic?"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_topic_alu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/topic_alu1"
+            android:layout_alignBottom="@+id/topic_alu1"
+            android:layout_toEndOf="@id/topic_alu1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/time_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_topic_alu"
+            android:layout_marginTop="4dp"
+            android:text="Was the session Time managing?"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_time_alu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/time_alu"
+            android:layout_alignBottom="@+id/time_alu"
+            android:layout_toEndOf="@id/time_alu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+
+        <TextView
+            android:id="@+id/sugg_alu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_time_alu"
+            android:layout_marginTop="4dp"
+            android:text="Any Suggessions / Queries?"
+            android:textColor="@color/darkOrange"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_sugg_alu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/sugg_alu"
+            android:layout_alignBottom="@+id/sugg_alu"
+            android:layout_toEndOf="@id/sugg_alu"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9000"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:textAlignment="center"
+    tools:context=".Contacts">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/roundforoc"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backer1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            app:srcCompat="@drawable/newback"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="202dp"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="Contacts"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+
+            android:orientation="vertical"
+
+            android:gravity="center">
+
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/trans"
+                    android:padding="10dp"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="School Of Civil Engineering"
+                        android:paddingBottom="5dp"/>
+
+                    <View
+                        android:layout_height="2dp"
+                        android:layout_width="match_parent"
+                        android:background="#000"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Dr. Shivananda P"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" pshivananda@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 8095866575"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof.Anupama U"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" anupama.u@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 9916049921"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/darker_gray"/>
+
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof. Vinayak B"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" vinayaka.b@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9663868893" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="School Of Mechanical Engineering"
+                        android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Prof. Ramesh Kumar S C" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" rameshkumar.sc@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="School Of Computing and Information Technology"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                    <View
+                        android:layout_height="2dp"
+                        android:layout_width="match_parent"
+                        android:background="#000"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof. Tanuja"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" k.tanuja@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 9632298756"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+
+                    <View android:layout_height="1dp" android:layout_width="match_parent" android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof. Sarva Mangala"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" sarvamangaladr@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 9008833680"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="School Of Electronics and Communications Engineering"
+                        android:paddingBottom="5dp"/>
+
+                    <View
+                        android:layout_height="2dp"
+                        android:layout_width="match_parent"
+                        android:background="#000"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof. Nataraj Urs"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" natarajurs.hd@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 9986120948"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof. Roshan Zameer Ahmed"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" roshanzameer@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 9036875398"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="School Of Electrical and Electronics Engineering"
+                        android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Prof.Christina V Sundari" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" christina@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="School Of Computer Science and Application"
+                        android:paddingBottom="5dp"/>
+
+                    <View
+                        android:layout_height="2dp"
+                        android:layout_width="match_parent"
+                        android:background="#000"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof. Deepa B G"
+                        android:drawableLeft="@drawable/ic_baseline_person_24"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" deepa.bg@reva.edu.in"
+                        android:drawableLeft="@drawable/ic_baseline_email_24"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 8105095047"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof. Shobhana Saxena"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" shobhanasaxena@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 9341261151"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+
+                     <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="School Of Commerce"
+                        android:paddingBottom="5dp"/>
+
+                    <View
+                        android:layout_height="2dp"
+                        android:layout_width="match_parent"
+                        android:background="#000"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof.Arifa Banu"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" arifabanu@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 9066056643"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" Prof.Mohammed Arsalan"
+                        android:drawableLeft="@drawable/person"
+                        android:paddingTop="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" mohammedarsalan@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text=" +91 9591112296"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/phone"
+                        android:textIsSelectable="true"/>
+
+
+
+
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9972613457" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+
+                    <View android:layout_height="1dp" android:layout_width="match_parent" android:background="@android:color/darker_gray"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Dr. Anshu Rani" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" anshurani@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 8105708413" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9886888477" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9739355443" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Management" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Prof.Nagendra S M" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+
+                        android:text=" nagendra.sm@reva.edu.in"
+                        android:drawableLeft="@drawable/email"
+                        android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9742056799" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Bio Chemistry" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Prof. H N Deepa" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" deepa.hn@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Bio Technology" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Prof. Renuka Madhu" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" renukamadhu@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9481775350" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Physics" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Prof. Jay dev pattar" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" jayadevpattar@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9620305750" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Chemistry" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Prof. Pushpalatha" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" pushpalatha@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9606894856" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Mathametics" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Dr. Harish Babu G A" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" harishbabuga@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9845549977" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Legal Studies" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Prof. Rahul B N" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" rahul.bn@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9620883491" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Arts &amp; Humanities" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Dr.Vijaya Lakshmi" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" vijisjm@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9972181134" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Legal Studies" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Prof. Rahul B N" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" rahul.bn@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9620883491" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_horizontal" android:textStyle="bold" android:textColor="#000" android:textSize="20dp" android:textAlignment="center" android:text="School Of Performing Arts" android:paddingBottom="5dp"/>
+
+                    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="#000"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" Anjali Raj URS" android:drawableLeft="@drawable/person" android:paddingTop="5dp" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" anjaliraj.urs@reva.edu.in" android:drawableLeft="@drawable/email" android:textIsSelectable="true"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="match_parent"                         android:textColor="@color/white"
+                        android:textSize="16dp" android:text=" +91 9886673452" android:paddingBottom="5dp" android:drawableLeft="@drawable/phone" android:textIsSelectable="true"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

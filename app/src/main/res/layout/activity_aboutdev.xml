@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9000"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:textAlignment="center"
+    tools:context=".AboutUs">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/roundforoc"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backer1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            app:srcCompat="@drawable/newback"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="202dp"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="About Developers"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+
+            android:orientation="vertical"
+
+            android:gravity="center">
+
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/trans"
+                    android:padding="10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="Backend Developers"
+                        android:paddingBottom="5dp"/>
+
+                    <View
+                        android:layout_height="2dp"
+                        android:layout_width="match_parent"
+                        android:background="#000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Mohammed Zeeshan A"
+                        android:textColor="@color/white"
+                        android:textIsSelectable="true"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Pooja K"
+                        android:paddingBottom="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Athira T K"
+                        android:paddingBottom="5dp"
+                        android:textIsSelectable="true"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Chaitanya Shekhar"
+                        android:paddingBottom="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Bhoomika H K"
+                        android:paddingBottom="5dp"
+
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Nagesh B M"
+                        android:paddingBottom="5dp"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/trans"
+                    android:padding="10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="Frontend Developers"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"/>
+
+                    <View
+                        android:layout_height="2dp"
+                        android:layout_width="match_parent"
+                        android:background="#000"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="T Jai Surya Prasad"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Sourajit Mandal"
+                        android:paddingBottom="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Abhijeet Rout"
+                        android:paddingBottom="5dp"
+
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Rachel Negi"
+                        android:paddingBottom="5dp"
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Akash Roushan"
+                        android:paddingBottom="5dp"
+                        android:textIsSelectable="true"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/trans"
+                    android:padding="10dp"
+                    android:visibility="visible">
+
+
+
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:text="Testing Members"
+                        android:paddingBottom="5dp"/>
+
+                    <View
+                        android:layout_height="2dp"
+                        android:layout_width="match_parent"
+                        android:background="#000"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Nagesh B M"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Vinay Kumar K N"
+                        android:paddingBottom="5dp"
+
+                        android:textIsSelectable="true"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:text="Sumanth"
+                        android:paddingBottom="5dp"
+                        android:textIsSelectable="true"/>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Schools Of CSA\nREVA University"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

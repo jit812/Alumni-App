@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9000"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/logoimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab"
+        android:text="REVA Alumni"
+        android:textColor="#fff"
+        android:elevation="20dp"
+        android:textSize="38dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/topcurve"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/usernameLogin"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="36dp"
+            android:background="@drawable/roundallsides"
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/roundallsides"
+            android:drawableLeft="@drawable/ic_baseline_code_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/usernameLogin"
+            app:layout_constraintStart_toStartOf="@+id/usernameLogin"
+            app:layout_constraintTop_toBottomOf="@+id/usernameLogin" />
+
+        <Spinner
+            android:id="@+id/spinnerLogin"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:spinnerMode="dialog"
+            app:layout_goneMarginStart="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/passwordLogin"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/passwordLogin"
+            app:layout_constraintTop_toBottomOf="@+id/passwordLogin" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/login"
+            android:textColor="#fff"
+            android:background="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerLogin" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+            app:layout_constraintStart_toStartOf="@+id/loginBtn"
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+        <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/create_account"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/forgotPassword"
+            app:layout_constraintStart_toStartOf="@+id/forgotPassword"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLogin"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/createAccount"
+            app:layout_constraintStart_toStartOf="@+id/createAccount"
+            app:layout_constraintTop_toBottomOf="@+id/createAccount" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By"
+            android:textColor="#ff6900"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarLogin" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:src="@drawable/revalogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <CheckBox
+            android:id="@+id/checkBoxShowPass"
+            android:layout_width="155dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/show_pass"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.152"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordLogin"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

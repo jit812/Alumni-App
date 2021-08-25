@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_news_bg1"
+    tools:context=".PersonalProfile">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="234dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/personal_profile"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dobpersonal"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:background="#56020202"
+        android:digits="0123456789-/"
+        android:ems="10"
+        android:hint="@string/dob"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/addresspersonal"
+        android:layout_width="226dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:background="#56020202"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dobpersonal" />
+
+    <EditText
+        android:id="@+id/pincodepersonal"
+        android:layout_width="233dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#56020202"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="@string/pincode"
+        android:inputType="textPersonName"
+        android:maxLength="8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addresspersonal" />
+
+    <EditText
+        android:id="@+id/fathername"
+        android:layout_width="234dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="#56020202"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:hint="@string/father"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pincodepersonal" />
+
+    <EditText
+        android:id="@+id/bloodgroup"
+        android:layout_width="234dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:background="#56020202"
+        android:digits="aboABO-+"
+        android:ems="10"
+        android:hint="@string/blood_group"
+        android:inputType="textPersonName"
+        android:maxLength="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fathername" />
+
+    <Button
+        android:id="@+id/personalUpdateBtn"
+        android:layout_width="227dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rectangle_14"
+        android:text="@string/update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bloodgroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>

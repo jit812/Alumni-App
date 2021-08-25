@@ -1,0 +1,318 @@
+<resources>
+    <string name="app_name">REVA Alumni</string>
+    <string-array name="Schools">
+        <item>School of Civil Engineering</item>
+        <item>School of Civil Mechanical</item>
+        <item>School of Civil C and IT</item>
+        <item>School of ECE</item>
+        <item>School of EEE</item>
+        <item>School of CSA</item>
+        <item>School of Management</item>
+        <item>School of Commerce</item>
+        <item>School of Bio Chemistry</item>
+        <item>School of Bio Tech</item>
+        <item>School of Physics</item>
+        <item>School of Chemistry</item>
+        <item>School of Math</item>
+        <item>School of Architecture</item>
+        <item>School of Legal Studies</item>
+        <item>School of Arts Humanity</item>
+    </string-array>
+
+    <string-array name="accomodation">
+        <item>Single Room</item>
+        <item>Double Room</item>
+    </string-array>
+
+
+    <string-array name="guestLecture">
+        <item>Raise fund</item>
+        <item>Guest event</item>
+        <item>Guest lecturer</item>
+        <item>Conference</item>
+        <item>Any other</item>
+
+    </string-array>
+
+
+    <string name="title_activity_navigation">navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="web_client_id">147825252115-tnp0k4hqf91l8aehkaobm2ljujl3lfql.apps.googleusercontent.com</string>
+
+    <string name="welcome">Welcome to REVA Alumni App</string>
+    <string name="login_title">LOGIN</string>
+    <string name="srn">SRN Num</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">Create an Account</string>
+    <string name="year_passed">Year of Passed</string>
+    <string name="sign_up">SIGNUP</string>
+    <string name="email">Email ID</string>
+    <string name="phone_num">Phone Num</string>
+    <string name="password_retype">Re-Type Password</string>
+    <string name="verify">VERIFY</string>
+    <string name="full_name">Full Name</string>
+    <string name="re_enter">Re-enter Password</string>
+    <string name="phone_verify">VERIFY PHONE NUM</string>
+    <string name="otp">OTP</string>
+    <string name="enter_otp">Enter Here</string>
+    <string name="resend_otp">Resend OTP?</string>
+    <string name="user_request">USER REQUESTS</string>
+    <string name="confirm_request">CONFIRM</string>
+    <string name="decline_request">DECLINE</string>
+    <string name="user_confirm">CONFIRM</string>
+    <string name="user_decline">DECLINE</string>
+    <string name="forgot_password_title">FORGOT PASSWORD TITLE</string>
+    <string name="send_otp">SEND OTP</string>
+    <string name="or">OR</string>
+    <string name="enter_otp_forgot">Enter OTP Here</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="old_password">Old Password</string>
+    <string name="error_view">error view</string>
+    <string name="TandC">I agree to the terms and condition of the AppCompany</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="verification_mail">SEND EMAIL TO VERIFY</string>
+    <string name="user_requests">USER REQUESTS</string>
+    <string name="wait_authentication">WAIT FOR AUTHENTICATION</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="send_mail">SEND MAIL</string>
+    <string name="phone_start">START</string>
+    <string name="phone_verify_btn"> VERIFY AND SIGNIN</string>
+    <string name="phone_otp_resend">RESEND</string>
+    <string name="logout">logout</string>
+    <string name="send_verification_success">status verification succeeded</string>
+    <string name="instent_validation">instant validation</string>
+    <string name="status_sign_in_failed">status sign in failed</string>
+    <string name="status_verification_succeeded">status verification succeeded</string>
+    <string name="instant_validation">validation</string>
+    <string name="firebase_status_fmt">firebase status format</string>
+    <string name="generate_otp">GENERATE OTP</string>
+    <string name="check_profile">CHECK PROFILE</string>
+    <string name="user_profile">USER PROFILE</string>
+    <string name="signup_accept">ACCEPT</string>
+    <string name="save_user">Save</string>
+    <string name="home">HOME</string>
+    <string name="user_name">User Name</string>
+    <string name="hide_pass">Hide Password</string>
+    <string name="show_pass">Show Password</string>
+    <string name="Settings">Settings</string>
+    <string name="Reset_pass">Reset Password</string>
+    <string name="Delete_account">Delete Account</string>
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass1">New Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="try_other_way">Try another way?</string>
+    <string name="reset">Reset</string>
+    <string name="update_email">Update Email</string>
+    <string name="enter_email">Enter new email id</string>
+    <string name="school_name">School:</string>
+    <string name="course">Course</string>
+    <string name="search">Search</string>
+    <string name="send_request">Send Request</string>
+    <string name="unfriend">Unfriend</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="confirm_frn_request">Accept</string>
+    <string name="friends">Friends</string>
+    <string name="friends_request">Friends Requests</string>
+    <string name="friends_request_sent">Friends Request sent</string>
+    <string name="chats">Chats</string>
+    <string name="contacts">Contacts</string>
+
+
+    <string name="profile">PROFILE</string>
+    <string name="academic">ACADEMIC</string>
+    <string name="personal">PERSONAL</string>
+    <string name="working_profile">WORKING PROFILE</string>
+    <string name="academic_profile">ACADEMIC PROFILE</string>
+    <string name="personal_profile">PERSONAL PROFILE</string>
+    <string name="address">Address</string>
+    <string name="father">Name of your Father</string>
+    <string name="dob">Date of birth</string>
+    <string name="pincode">Pincode</string>
+    <string name="blood_group">Blood group</string>
+    <string name="employee">Employee</string>
+    <string name="unemployee">UnEmployee</string>
+    <string name="designation">Designation</string>
+    <string name="domain">Domain</string>
+    <string name="company_name">Company Name</string>
+    <string name="job_seeker">Looking for a job?</string>
+    <string name="skills_set">Skill Set</string>
+    <string name="job_profile_interested">Job Profile Interested in?</string>
+    <string name="interested_domain">Interested Domain</string>
+    <string name="update">UPDATE</string>
+    <string name="new_cred">NEW CREDENTIALS</string>
+    <string name="new_pass">NEW PASSWORD</string>
+    <string name="con_pass">CONFIRM PASSWORD</string>
+    <string name="alumni_of">REVA Alumni of:</string>
+
+
+    <string-array name="Gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+
+    <string-array name="spinnerLogin">
+        <item>Admin</item>
+        <item>User</item>
+
+    </string-array>
+    <string-array name="Programs">
+        <item> B. Tech in Information Science and Engineering</item>
+        <item>B.Tech Computer Science and Engineering (Artificial Intelligence and Machine Learning)</item>
+        <item>B. Tech in Computer Science and Systems Engineering</item>
+        <item>B Tech in Bio electronics Engineering</item>
+        <item>B.Tech in Computer Science and Engineering</item>
+        <item>B.Tech in Computer Science and Information Technology</item>
+        <item>B.Tech in Civil Engineering</item>
+        <item>B.Tech in Electronics and Communication Engineering</item>
+        <item>B. Tech. in Electronics and Computer Engineering</item>
+        <item>B.Tech in Electrical and Electronics Engineering</item>
+        <item>B. Tech in Electrical and Computer Engineering</item>
+        <item>B.Tech in Mechanical Engineering</item>
+        <item>B.Tech in Mechatronics Engineering</item>
+        <item>Advanced Certification program in Plumbing and Irrigation Systems in Civil Engineering</item>
+
+        <item>Bachelor of Architecture (B. Arch.)</item>
+
+        <item>Bachelor of Business Administration</item>
+        <item>Bachelor of Business Administration (Honours)</item>
+        <item>Bachelor of Business Administration (Entrepreneurship)</item>
+        <item>Bachelor of Commerce (B.Com Industry Integrated)</item>
+        <item>Bachelor of Commerce (Honours)</item>
+
+        <item>BA in Tourism, Journalism and History</item>
+        <item>BA in Political Science, Economics and Journalism</item>
+        <item>BA in Journalism, English and Psychology</item>
+        <item>BA in Performing Arts, English and Psychology</item>
+
+        <item>Bachelor of Computer Applications (BCA)</item>
+        <item>B.Sc. (Hons.) in Computer Science (specialisation in Cloud Computing and Big Data)</item>
+        <item>B.Sc – Bioinformatics (Biology, Computer Science and Mathematics –BCsM)</item>
+        <item>B.Sc. Physics, Mathematics and Chemistry PCM</item>
+        <item>B.Sc Physics, Mathematics and Computer science (PMCs)</item>
+        <item>B.Sc. (Biochemistry, Microbiology, Medical Laboratory Technology)</item>
+        <item>B.Sc. Mathematics, Statistics and Computer Science MStCs</item>
+        <item>B.Sc. (Biotechnology, Biochemistry and Genetics BBG)</item>
+
+        <item>Bachelor of Business Administration and Bachelor of Law (BBA., LL. B. Honours)</item>
+        <item>Bachelor of Arts and Bachelor of Laws (B.A., LL. B. Honours)</item>
+
+        <item>M.Tech in VLSI and Embedded Systems (Part Time)</item>
+        <item>M.Tech in Cyber Security</item>
+        <item>M.Tech in Construction Technology and Management</item>
+        <item>M.Tech in Computer Science and Engineering (Part Time)</item>
+        <item>M.Tech in Computer Aided Structural Engineering</item>
+        <item>M.Tech in Transportation Engineering and Management</item>
+        <item>M.Tech in Computer Science and Engineering (Full Time)</item>
+        <item>M.Tech in Artificial Intelligence (AI)</item>
+        <item>M.Tech in VLSI and Embedded Systems (Full Time)</item>
+        <item>M.Tech in Digital Communication and Networking</item>
+        <item>M.Tech in Machine Design</item>
+        <item>M.Tech in Power and Energy Systems [Full Time]</item>
+
+        <item>Master of Business Administration (MBA)</item>
+        <item>Master of Commerce (M. Com.)</item>
+
+        <item>Master of Performing Arts(MPA)</item>
+        <item>M.Sc in Psychology</item>
+        <item>M.A in English</item>
+        <item>MA in Journalism and Communication</item>
+
+        <item>Master of Computer Applications (MCA)</item>
+        <item>M.Sc in Computer Science</item>
+        <item>M.Sc in Biochemistry</item>
+        <item>M.Sc in Biotechnology</item>
+        <item>M.Sc in Chemistry</item>
+        <item>M.Sc. in Physics</item>
+        <item>M.Sc in Mathematics</item>
+
+        <item>LL.M.in Business and Corporate Law (1 Year)</item>
+
+        <item>Ph. D. in Electrical and Electronics Engineering</item>
+        <item>Ph. D. in Civil Engineering</item>
+        <item>Ph. D. in Computer Science and Engineering</item>
+        <item>Ph. D. in Electronics and Communication Engineering</item>
+        <item>Ph. D. in Mechanical Engineering</item>
+        <item>Ph. D. in Computer Science and Engineering</item>
+
+        <item>Ph. D. in Performing Arts</item>
+        <item>Ph.D. in English</item>
+        <item>Ph. D. in Psychology</item>
+
+        <item>Ph. D. in Management Studies</item>
+        <item>Ph. D. in Commerce</item>
+
+        <item>Ph. D. in Chemistry</item>
+        <item>Ph. D. in Mathematics</item>
+        <item>Ph. D. in Physics</item>
+        <item>Ph. D. in Biochemistry</item>
+        <item>Ph. D. in Biotechnology</item>
+        <item>Ph. D. in Computer Science and Applications</item>
+        <item>Ph. D. in Microbiology</item>
+
+        <item>Ph. D. in Architecture</item>
+
+        <item>Ph. D. in Leg</item>
+
+    </string-array>
+    <string-array name="documents">
+        <item>Transfer Certificate</item>
+        <item>Migration Certificate</item>
+        <item>Transcript</item>
+        <item>Consolidated Marks</item>
+        <item>Provisional Certificate</item>
+        <item>Duplicate Marks Card</item>
+        <item>10th, 12th Marks Card</item>
+    </string-array>
+    <string-array name="EmployeeType">
+        <item>Intern</item>
+        <item>Full-Time</item>
+        <item>Contract</item>
+    </string-array>
+    <string-array name="Exp">
+        <item>Fresher</item>
+        <item>1-2</item>
+        <item>More than 3</item>
+    </string-array>
+    <string name="view_details">View Details</string>
+
+    <string name="list_requests">List of Alumni Requests</string>
+    <string name="upload">UPLOAD</string>
+    <string-array name="Events">
+        <item>Guest Lecture</item>
+        <item>Technical Talk</item>
+        <item>Seminar</item>
+        <item>Workshop</item>
+        <item>Hands on Session</item>
+        <item>Motivational Talk</item>
+    </string-array>
+    <string name="vision_about">To transform students into good human beings, responsible citizens and competent professionals, focusing on assimilation, generation and dissemination of knowledge in the area of Computer Applications.</string>
+    <string name="to_impart_programs_at_graduate_post_graduate_and_doctoral_levels_in_the_field_of_computer_applications">To impart programs at graduate, post-graduate and doctoral levels in the field of computer applications</string>
+    <string name="to_adopt_innovative_methods_of_teaching_and_promote_student_centric_learning_process">To adopt innovative methods of teaching and promote student centric learning process</string>
+    <string name="to_create_infrastructure_of_international_standard_and_facilitate_and_create_conducive_environment_for_teaching_learning_and_research">To create infrastructure of international standard and facilitate and create conducive environment for teaching, learning and research</string>
+    <string name="to_promote_faculty_development_and_encourage_faculty_members_and_students_to_organize_and_participate_in_national_and_international_level_conferences_seminars_symposia_and_such_others">To promote faculty development and encourage faculty members and students to organize and participate in national and international level conferences, seminars, symposia and such others</string>
+    <string name="to_encourage_teachers_and_students_to_take_up_interdisciplinary_studies_and_research">To encourage teachers and students to take-up interdisciplinary studies and research</string>
+    <string name="to_promote_students_participation_in_co_curricular_and_extension_activities_and_develop_their_personality_traits_and_team_spirit">To promote students participation in co-curricular and extension activities and develop their personality traits and team spirit</string>
+    <string name="to_impart_quality_education_to_meet_the_needs_of_profession_and_society_and_achieve_excellence_in_teaching_learning_and_research_in_the_area_of_computer_applications">To impart quality education to meet the needs of profession and society, and achieve excellence in teaching-learning and research in the area of Computer Applications;</string>
+    <string name="login">Login</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="dear_alumni_please_post_your_job_vacancies_available_in_your_company_thank_you_in_advance">Dear Alumni,<br /> please post your job vacancies available in your company,Thank you in Advance</string>
+    <string name="dear_alumni_if_you_like_to_provide_funds_guest_event_reference_guest_lecture_any_othe_kindly_fill_the_form">Dear Alumni,<br /><br /> If you like to provide Funds/Guest Event/Reference/Guest Lecture/Any Othe.Kindly fill the form.</string>
+    <string name="dear_alumni_the_page_will_be_redirected_to_email_kindly_include_all_the_details_in_mail">Dear Alumni,<br />The page will be redirected to email kindly include all the details in mail.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_news_bg1"
+    android:fillViewport="true"
+    tools:context=".Profile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/about_card1"
+            android:backgroundTint="#7A696969"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fullnameProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:enabled="false"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/roundallsides"
+                    android:hint="Full Name"
+                    android:paddingStart="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <EditText
+                    android:id="@+id/emailProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:enabled="false"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/roundallsides"
+                    android:hint="Email"
+
+                    android:paddingStart="20dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fullnameProfileText" />
+
+
+                <EditText
+                    android:id="@+id/phoneProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"
+                    android:enabled="false"
+                    android:digits="0123456789"
+                    android:maxLength="12"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/roundallsides"
+                    android:hint="Phone Number"
+                    android:paddingStart="20dp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/roundforoc"
+            android:elevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="18dp"
+                android:onClick="backbb"
+                android:src="@drawable/newback"
+                app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginEnd="11dp"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gearBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/gearBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sett" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:id="@+id/cardView2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="28dp"
+            android:elevation="20dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="197dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/academic_profile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/faded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/about_card1"
+            android:backgroundTint="#7A696969"
+            android:outlineProvider="none"
+            app:cardCornerRadius="15dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/srnProfileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/roundallsides"
+                    android:hint="SRN"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:digits="abcdefghijklmnopqrstuvwxyz0123456789"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <EditText
+                    android:id="@+id/courceProflieText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/roundallsides"
+
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Branch"
+                    android:inputType="textPersonName"
+
+                    android:paddingStart="20dp"
+                    android:text="@string/course" />
+
+                <Spinner
+                    android:id="@+id/branchList"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/roundallsides"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/name4"
+                    android:entries="@array/Programs"
+                    android:popupBackground="#D9020202" />
+
+                <EditText
+                    android:background="@drawable/roundallsides"
+                    android:id="@+id/yearPassedText"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:maxLength="4"
+                    android:digits="0123456789"
+                    android:paddingStart="20dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="Year Passed"
+                    android:inputType="textPersonName"/>
+
+
+
+
+                <Spinner
+                    android:id="@+id/schoolsList"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/roundallsides"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginRight="30dp"
+                    android:entries="@array/Schools"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="197dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/personal_profile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView21" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/faded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView121"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/about_card1"
+            android:backgroundTint="#7A696969"
+            android:outlineProvider="none"
+            app:cardCornerRadius="15dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view12">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/dobpersonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/roundallsides"
+                    android:hint="DOB"
+                    android:ems="10"
+                    android:digits="0123456789-/"
+                    android:maxLength="10"
+                    android:enabled="false"
+
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <EditText
+                    android:background="@drawable/roundallsides"
+                    android:id="@+id/addresspersonal"
+                    android:hint="@string/address"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:paddingStart="20dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:enabled="false"
+
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:background="@drawable/roundallsides"
+                    android:id="@+id/pincodepersonal"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+
+                    android:paddingStart="20dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="Pincode"
+                    android:digits="0123456789"
+                    android:maxLength="8"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:background="@drawable/roundallsides"
+                    android:id="@+id/fathername"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+
+                    android:paddingStart="20dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="Father Name"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="textPersonName"/>
+                <EditText
+                    android:background="@drawable/roundallsides"
+                    android:id="@+id/bloodgroup"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+
+                    android:layout_marginBottom="16dp"
+                    android:paddingStart="20dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="Blood Group"
+                    android:digits="aboABO+-"
+                    android:maxLength="4"
+                    android:inputType="textPersonName"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textView181"
+            android:layout_width="197dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/working_profile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView121" />
+
+        <View
+            android:id="@+id/view121"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/faded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView181" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1211"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/about_card1"
+            android:backgroundTint="#7A696969"
+            android:outlineProvider="none"
+            app:cardCornerRadius="15dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view121">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:id="@+id/radioGroup"
+                        android:enabled="false"
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioem"
+                            android:layout_weight="1"
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Employed"
+                            android:textSize="18sp"/>
+
+                        <RadioButton
+                            android:id="@+id/radiouem"
+                            android:layout_weight="1"
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Unemployed"
+                            android:textSize="18sp"/>
+
+                    </RadioGroup>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emll"
+                    android:layout_marginBottom="16dp"
+
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    >
+
+                    <EditText
+                        android:id="@+id/designationText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingStart="20dp"
+                        android:enabled="false"
+
+                        android:layout_marginTop="16dp"
+                        android:ems="10"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/roundallsides"
+                        android:hint="@string/designation"
+                        android:inputType="textPersonName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/unemployeecheckBox2" />
+
+                    <EditText
+                        android:id="@+id/domainText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/roundallsides"
+                        android:layout_marginTop="8dp"
+                        android:ems="10"
+                        android:paddingStart="20dp"
+                        android:enabled="false"
+
+
+                        android:hint="@string/domain"
+                        android:inputType="textPersonName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/designationText" />
+
+                    <EditText
+                        android:id="@+id/companyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/roundallsides"
+                        android:layout_marginTop="8dp"
+                        android:ems="10"
+                        android:paddingStart="20dp"
+                        android:enabled="false"
+
+                        android:hint="@string/company_name"
+                        android:inputType="textPersonName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/domainText" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/unemll"
+                    android:visibility="gone"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/jobSeeking"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="30dp"
+                        android:paddingStart="20dp"
+                        android:enabled="false"
+
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/roundallsides"
+                        android:hint="@string/job_seeker"
+                       />
+
+                    <EditText
+                        android:id="@+id/domainInterested"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/roundallsides"
+                        android:layout_marginTop="8dp"
+                        android:ems="10"
+                        android:paddingStart="20dp"
+                        android:enabled="false"
+
+                        android:hint="@string/interested_domain"
+                        android:inputType="textPersonName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/jobSeeking" />
+
+                    <EditText
+                        android:id="@+id/jobprofileInterest"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/roundallsides"
+                        android:layout_marginTop="8dp"
+                        android:ems="10"
+                        android:paddingStart="20dp"
+                        android:enabled="false"
+
+                        android:hint="@string/job_profile_interested"
+                        android:inputType="textPersonName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/domainInterested" />
+
+                    <EditText
+                        android:id="@+id/skillset"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/roundallsides"
+                        android:layout_marginTop="8dp"
+                        android:ems="10"
+                        android:enabled="false"
+
+                        android:paddingStart="20dp"
+                        android:hint="@string/skills_set"
+                        android:inputType="textPersonName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/jobprofileInterest" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/Editbutton"
+            android:layout_width="132dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#000"
+            android:text="Edit Profile"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1211" />
+
+        <Button
+            android:id="@+id/updateProfileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="@string/update"
+            android:textColor="@color/colorAccent"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/Editbutton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1211" />
+
+        <Button
+            android:id="@+id/frnsBtn"
+            android:layout_width="86dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/friends"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+        <Button
+            android:id="@+id/frnsRequestSentBtn"
+            android:layout_width="87dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/friends_request_sent"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+        <Button
+            android:id="@+id/frnsRequestBtn"
+            android:layout_width="87dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="104dp"
+            android:text="@string/friends_request"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toEndOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3"
+            app:layout_constraintVertical_bias="0.096" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
