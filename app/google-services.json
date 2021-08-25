@@ -7,20 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:147825252115:android:4c30934778f09c6933ece6",
+        "mobilesdk_app_id": "-----",
         "android_client_info": {
           "package_name": "com.example.alumni"
         }
       },
       "oauth_client": [
         {
-          "client_id": "147825252115-tnp0k4hqf91l8aehkaobm2ljujl3lfql.apps.googleusercontent.com",
+          "client_id": "---",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAKqxl3E3hbkm3sw4zcSXfcBFBTMqljcGw"
+          "current_key": "API KEY"
         }
       ],
       "services": {
